@@ -8,6 +8,9 @@ import App, { AppContextProvider } from '@magento/venia-ui/lib/components/App';
 import StoreCodeRoute from '@magento/venia-ui/lib/components/StoreCodeRoute';
 
 const Adapter = props => {
+    // debug custom env
+    console.log(process.env.AUTHOR_DEV_NAME);
+
     const talonProps = useAdapter(props);
     const {
         apolloProps,

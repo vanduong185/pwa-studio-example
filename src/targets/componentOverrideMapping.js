@@ -4,5 +4,5 @@
 // You could replace others package like @magento/peregrine,
 // or even @magento/pagebuilder
 module.exports = componentOverrideMapping = {
-    // [`@magento/venia-ui/lib/components/Header/header.js`]: './src/components/Header/header.js'
+    [`@magento/venia-ui/lib/components/Logo/logo.js`]: './src/components/Logo/logo.jsx'
 };
