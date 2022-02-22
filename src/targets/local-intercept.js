@@ -27,4 +27,12 @@ module.exports = targets => {
             ]
         });
     });
+
+    // page builder
+    targets.of('@magento/pagebuilder').customContentTypes.tap(contentTypes => {
+        contentTypes.add({
+            contentType: 'text',
+            importPath: require.resolve('../components/CustomText')
+        });
+    });
 };
